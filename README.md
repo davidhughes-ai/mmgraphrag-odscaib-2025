@@ -32,61 +32,61 @@ __Contact Information__
 10. You should now have a directory structure that looks like this:
     ```
     .
-├── README.md
-├── poetry.lock
-├── pyproject.toml
-└── src
-    └── mmgraphrag_odsc_aib2025
-        ├── __init__.py
-        ├── baml_client
-        │   ├── __init__.py
-        │   ├── async_client.py
-        │   ├── globals.py
-        │   ├── inlinedbaml.py
-        │   ├── partial_types.py
-        │   ├── sync_client.py
-        │   ├── tracing.py
-        │   ├── type_builder.py
-        │   └── types.py
-        ├── baml_src
-        │   ├── captions.baml
-        │   ├── clients.baml
-        │   ├── features.baml
-        │   └── generators.baml
-        ├── config
-        │   ├── __init__.py
-        │   └── config.py
-        ├── images
-        │   ├── b_COCO_val2014_000000000715.jpg
-        │   ├── b_COCO_val2014_000000001153.jpg
-        │   ├── b_COCO_val2014_000000002587.jpg
-        │   ├── b_COCO_val2014_000000003661.jpg
-        │   ├── b_COCO_val2014_000000003817.jpg
-        │   ├── e_COCO_val2014_000000000757.jpg
-        │   ├── e_COCO_val2014_000000001164.jpg
-        │   ├── e_COCO_val2014_000000001869.jpg
-        │   ├── e_COCO_val2014_000000002255.jpg
-        │   └── e_COCO_val2014_000000004229.jpg
-        ├── lib
-        │   ├── __init__.py
-        │   ├── embedding.py
-        │   └── image_processing.py
-        ├── notebook
-        │   └── mmgraphrag.ipynb
-        ├── tensorboard
-        │   ├── checkpoint
-        │   ├── metadata.tsv
-        │   ├── model.ckpt.data-00000-of-00001
-        │   ├── model.ckpt.index
-        │   ├── model.ckpt.meta
-        │   ├── projector_config.pbtxt
-        │   ├── sprite.png
-        │   └── vectors.tsv
-        └── utils
+    ├── README.md
+    ├── poetry.lock
+    ├── pyproject.toml
+    └── src
+        └── mmgraphrag_odsc_aib2025
             ├── __init__.py
-            └── logger.py
+            ├── baml_client
+            │   ├── __init__.py
+            │   ├── async_client.py
+            │   ├── globals.py
+            │   ├── inlinedbaml.py
+            │   ├── partial_types.py
+            │   ├── sync_client.py
+            │   ├── tracing.py
+            │   ├── type_builder.py
+            │   └── types.py
+            ├── baml_src
+            │   ├── captions.baml
+            │   ├── clients.baml
+            │   ├── features.baml
+            │   └── generators.baml
+            ├── config
+            │   ├── __init__.py
+            │   └── config.py
+            ├── images
+            │   ├── b_COCO_val2014_000000000715.jpg
+            │   ├── b_COCO_val2014_000000001153.jpg
+            │   ├── b_COCO_val2014_000000002587.jpg
+            │   ├── b_COCO_val2014_000000003661.jpg
+            │   ├── b_COCO_val2014_000000003817.jpg
+            │   ├── e_COCO_val2014_000000000757.jpg
+            │   ├── e_COCO_val2014_000000001164.jpg
+            │   ├── e_COCO_val2014_000000001869.jpg
+            │   ├── e_COCO_val2014_000000002255.jpg
+            │   └── e_COCO_val2014_000000004229.jpg
+            ├── lib
+            │   ├── __init__.py
+            │   ├── embedding.py
+            │   └── image_processing.py
+            ├── notebook
+            │   └── mmgraphrag.ipynb
+            ├── tensorboard
+            │   ├── checkpoint
+            │   ├── metadata.tsv
+            │   ├── model.ckpt.data-00000-of-00001
+            │   ├── model.ckpt.index
+            │   ├── model.ckpt.meta
+            │   ├── projector_config.pbtxt
+            │   ├── sprite.png
+            │   └── vectors.tsv
+            └── utils
+                ├── __init__.py
+                └── logger.py
 
-17 directories, 60 files
+    17 directories, 60 files
     ```
 1.  Start jupyter lab
    `jupyter lab`
