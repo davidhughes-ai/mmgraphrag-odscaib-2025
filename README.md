@@ -91,7 +91,4 @@ __Contact Information__
 1.  Start jupyter lab
    `jupyter lab`
 2.  Jupyter Lab should open a browser and present its UI with the notebook named _mmgraphrag.ipynb_ being visibile on the left panel. If not, open a browser and navigate to `localhost:8888/lab/`
-3.  stub
-4.  stub
-5.  stub
-6.  stub
+3.  Follow the instructions in the notebook
