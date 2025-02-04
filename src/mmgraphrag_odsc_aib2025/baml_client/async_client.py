@@ -119,6 +119,29 @@ class BamlAsyncClient:
       )
       return cast(types.ImageFeatures, raw.cast_to(types, types, partial_types, False))
     
+    async def ExtractImageObjects(
+        self,
+        img: baml_py.Image,
+        baml_options: BamlCallOptions = {},
+    ) -> List[types.ImageObject]:
+      __tb__ = baml_options.get("tb", None)
+      if __tb__ is not None:
+        tb = __tb__._tb # type: ignore (we know how to use this private attribute)
+      else:
+        tb = None
+      __cr__ = baml_options.get("client_registry", None)
+
+      raw = await self.__runtime.call_function(
+        "ExtractImageObjects",
+        {
+          "img": img,
+        },
+        self.__ctx_manager.get(),
+        tb,
+        __cr__,
+      )
+      return cast(List[types.ImageObject], raw.cast_to(types, types, partial_types, False))
+    
 
 
 class BamlStreamClient:
@@ -217,6 +240,36 @@ class BamlStreamClient:
         raw,
         lambda x: cast(partial_types.ImageFeatures, x.cast_to(types, types, partial_types, True)),
         lambda x: cast(types.ImageFeatures, x.cast_to(types, types, partial_types, False)),
+        self.__ctx_manager.get(),
+      )
+    
+    def ExtractImageObjects(
+        self,
+        img: baml_py.Image,
+        baml_options: BamlCallOptions = {},
+    ) -> baml_py.BamlStream[List[partial_types.ImageObject], List[types.ImageObject]]:
+      __tb__ = baml_options.get("tb", None)
+      if __tb__ is not None:
+        tb = __tb__._tb # type: ignore (we know how to use this private attribute)
+      else:
+        tb = None
+      __cr__ = baml_options.get("client_registry", None)
+
+      raw = self.__runtime.stream_function(
+        "ExtractImageObjects",
+        {
+          "img": img,
+        },
+        None,
+        self.__ctx_manager.get(),
+        tb,
+        __cr__,
+      )
+
+      return baml_py.BamlStream[List[partial_types.ImageObject], List[types.ImageObject]](
+        raw,
+        lambda x: cast(List[partial_types.ImageObject], x.cast_to(types, types, partial_types, True)),
+        lambda x: cast(List[types.ImageObject], x.cast_to(types, types, partial_types, False)),
         self.__ctx_manager.get(),
       )
     

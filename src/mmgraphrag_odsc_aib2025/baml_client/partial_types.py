@@ -35,7 +35,7 @@ class StreamState(BaseModel, Generic[T]):
 
 
 class ImageAnalysis(BaseModel):
-    caption: Optional["ImageCaption"] = None
+    description: Optional["ImageCaption"] = None
     features: Optional["ImageFeatures"] = None
     objects: List["ImageObject"]
 

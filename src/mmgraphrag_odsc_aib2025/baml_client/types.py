@@ -40,7 +40,7 @@ def all_succeeded(checks: Dict[CheckName, Check]) -> bool:
 
 
 class ImageAnalysis(BaseModel):
-    caption: "ImageCaption"
+    description: "ImageCaption"
     features: "ImageFeatures"
     objects: Optional[List["ImageObject"]] = None
 
