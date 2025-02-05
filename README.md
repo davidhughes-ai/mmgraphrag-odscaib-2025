@@ -6,7 +6,7 @@ __Contact Information__
 - Co-Presenter [Amy Hodler](mailto:amy.hodler@graphgeeks.org)
 
 __Presentation__
-- Presentation [Slides](https://github.com/davidhughes-ai/mmgraphrag-odscaib-2025/commit/4451288ba45d7332a23d95842054b27f7d19fd5b) 
+- Presentation [Slides](https://github.com/davidhughes-ai/mmgraphrag-odscaib-2025/blob/main/ODSC%20_%20AI%20Builders_Feb%202025.pdf) 
 
 ## Core Requirements
 - Python3.10
