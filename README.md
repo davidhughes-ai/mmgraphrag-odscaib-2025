@@ -3,7 +3,10 @@ This repo is a companion to the mmGraphRAG presentation ODSC AI Builders 2025. M
 
 __Contact Information__
 - Author, Presenter [David Hughes](mailto:david@davidhughes.ai) 
-- Co-Presenter [Amy Hodler]()
+- Co-Presenter [Amy Hodler](mailto:amy.hodler@graphgeeks.org)
+
+__Presentation__
+- Presentation [Slides](https://github.com/davidhughes-ai/mmgraphrag-odscaib-2025/commit/4451288ba45d7332a23d95842054b27f7d19fd5b) 
 
 ## Core Requirements
 - Python3.10
